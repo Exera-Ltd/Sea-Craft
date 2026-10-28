@@ -30,8 +30,9 @@ So the page ships with three palettes on identical layout, switchable live:
 | `balanced` | Blue, grey & sand | **Recommended** — same blue, warm neutral |
 | `lagoon` | Lagoon & driftwood | Greener, drawn from the reference photo |
 
-Open `index.html` and use the switcher at the bottom of the screen, or add
-`?theme=client` / `?theme=balanced` / `?theme=lagoon` to the URL.
+Live at https://exera-ltd.github.io/Sea-Craft/ — use the switcher at the bottom of the screen, add
+`?theme=client` / `?theme=balanced` / `?theme=lagoon` to the URL, or open
+https://exera-ltd.github.io/Sea-Craft/compare.html to see all three at once.
 
 Once the client picks, delete the two unused blocks in `assets/css/style.css`
 (section 1) and the `.pv` preview bar in section 16.

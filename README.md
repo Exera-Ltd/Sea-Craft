@@ -5,11 +5,23 @@ shells, model ships, resin and island wood.
 
 ## Viewing it
 
-**Live:** published to GitHub Pages from this branch by
-`.github/workflows/pages.yml` on every push.
+**Live:** https://exera-ltd.github.io/Sea-Craft/
 
-- `/` — the shop, with a palette switcher at the bottom of the screen
-- `/compare.html` — all three palettes side by side, scrolling together
+Published to GitHub Pages from this branch by `.github/workflows/pages.yml` on
+every push, so the preview updates without merging anywhere.
+
+- [https://exera-ltd.github.io/Sea-Craft/](https://exera-ltd.github.io/Sea-Craft/) — the shop, with a palette switcher at the bottom of the screen
+- [https://exera-ltd.github.io/Sea-Craft/compare.html](https://exera-ltd.github.io/Sea-Craft/compare.html) — all three palettes side by side, scrolling together
+
+Direct links for the client, switcher hidden:
+
+- [Blue &amp; grey](https://exera-ltd.github.io/Sea-Craft/?theme=client&ui=0)
+- [Blue, grey &amp; sand (recommended)](https://exera-ltd.github.io/Sea-Craft/?theme=balanced&ui=0)
+- [Lagoon &amp; driftwood](https://exera-ltd.github.io/Sea-Craft/?theme=lagoon&ui=0)
+
+The repository is private but a GitHub Pages site is not: anyone with the URL
+can open it. Both pages send `noindex, nofollow` so it will not appear in search
+results, but treat the link as shareable-but-unlisted, not confidential.
 
 Or open `index.html` straight off disk. No server, no build step, no network
 calls — the one thing that needs a server is `compare.html`, which measures the
