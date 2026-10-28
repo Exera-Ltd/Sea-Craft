@@ -482,6 +482,12 @@ ul{margin:0; padding:0; list-style:none}
 .pv-dots i{width:12px;height:12px;border-radius:50%;margin-left:-4px;border:1.5px solid rgb(255 255 255 / .5)}
 .pv-opt[aria-pressed="true"] .pv-dots i{border-color:rgb(0 0 0 / .14)}
 .pv-dots i:first-child{margin-left:0}
+.pv-link{
+  color:#fff; opacity:.72; font-size:.72rem; letter-spacing:.09em; text-transform:uppercase;
+  border-bottom:1px solid rgb(255 255 255 / .3); padding-bottom:2px; margin-right:6px;
+  white-space:nowrap; transition:opacity .2s;
+}
+.pv-link:hover{opacity:1}
 .pv-tip{
   position:absolute; left:50%; transform:translateX(-50%); bottom:calc(100% + 10px);
   background:#fff; color:#0A1820; padding:.5rem .9rem; border-radius:var(--r-sm);

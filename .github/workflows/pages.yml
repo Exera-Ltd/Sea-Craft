@@ -1,0 +1,50 @@
+# Publishes the Sea Craft preview to GitHub Pages.
+#
+# Source branch is the preview branch, not a default branch, so the client can
+# see the work without it being merged anywhere.
+name: Deploy preview to GitHub Pages
+
+on:
+  push:
+    branches: ["claude/ecommerce-website-preview-7s21ga"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish; queue at most one behind it.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp index.html compare.html .nojekyll _site/
+          cp -r assets _site/
+          # previews/ is 24 MB of screenshots that the live site makes redundant
+          echo "--- _site ---"
+          du -sh _site
+          find _site -maxdepth 2 -type d | sort
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

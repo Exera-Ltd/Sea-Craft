@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea Craft — palette comparison</title>
+<meta name="description" content="The same Sea Craft homepage in three palettes, side by side.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/img/logo.svg">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --ink:#0B1B22; --panel:#13262E; --line:#24404A;
+    --text:#E8F0F1; --dim:#8FA7AF; --hot:#2BA3B5;
+    --font:'Jost','Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --serif:'Fraunces',Georgia,serif;
+  }
+  html{scroll-behavior:smooth}
+  body{margin:0; background:var(--ink); color:var(--text); font-family:var(--font); font-size:15px; line-height:1.6}
+  a{color:inherit; text-decoration:none}
+
+  .bar{
+    position:sticky; top:0; z-index:20; background:rgb(11 27 34 / .92);
+    backdrop-filter:blur(14px); border-bottom:1px solid var(--line);
+  }
+  .bar-in{
+    max-width:1680px; margin-inline:auto; padding:12px 22px;
+    display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+  }
+  .brand{display:flex; align-items:center; gap:10px; margin-right:auto}
+  .brand img{width:30px;height:30px; color:var(--hot)}
+  .brand b{font-family:var(--serif); font-size:1.08rem; font-weight:600; letter-spacing:-.01em}
+  .brand span{display:block; font-size:.62rem; letter-spacing:.24em; text-transform:uppercase; color:var(--dim)}
+  .jump{display:flex; gap:4px; flex-wrap:wrap}
+  .jump button{
+    border:0; background:transparent; color:var(--dim); cursor:pointer; font:inherit;
+    font-size:.78rem; letter-spacing:.07em; text-transform:uppercase;
+    padding:7px 11px; border-radius:99px; transition:.2s;
+  }
+  .jump button:hover{background:#1D343D; color:#fff}
+  .seg{display:flex; background:#1A2F38; border-radius:99px; padding:3px}
+  .seg button{
+    border:0; background:transparent; color:var(--dim); cursor:pointer; font:inherit;
+    font-size:.74rem; letter-spacing:.09em; text-transform:uppercase;
+    padding:7px 15px; border-radius:99px; transition:.2s;
+  }
+  .seg button[aria-pressed="true"]{background:var(--hot); color:#06222A; font-weight:600}
+
+  .intro{max-width:1680px; margin-inline:auto; padding:34px 22px 10px}
+  .intro h1{font-family:var(--serif); font-weight:500; font-size:clamp(1.5rem,1.1rem+1.6vw,2.3rem); margin:0 0 .5rem; letter-spacing:-.02em}
+  .intro p{color:var(--dim); max-width:72ch; margin:0}
+  .intro p + p{margin-top:.6rem}
+  .intro b{color:var(--text); font-weight:500}
+
+  .cols{
+    max-width:1680px; margin-inline:auto; padding:22px 22px 70px;
+    display:grid; grid-template-columns:repeat(3,1fr); gap:18px; align-items:start;
+  }
+  .col{min-width:0}
+  .head{padding:0 2px 14px}
+  .tag{
+    display:inline-block; font-size:.62rem; letter-spacing:.16em; text-transform:uppercase;
+    padding:4px 9px; border-radius:99px; background:#1D343D; color:var(--dim); margin-bottom:9px;
+  }
+  .tag--rec{background:var(--hot); color:#06222A; font-weight:600}
+  .head h2{font-family:var(--serif); font-size:1.22rem; font-weight:500; margin:0 0 4px}
+  .head p{color:var(--dim); font-size:.84rem; margin:0 0 11px}
+  .sw{display:flex; gap:6px; margin-bottom:10px}
+  .sw i{width:46px; height:38px; border-radius:7px; border:1px solid rgb(255 255 255 / .14)}
+  .hexes{display:flex; gap:6px; font-size:.58rem; color:var(--dim); letter-spacing:.02em; margin-bottom:12px}
+  .hexes span{width:46px; text-align:center; font-variant-numeric:tabular-nums}
+  .open{
+    display:inline-flex; align-items:center; gap:6px; font-size:.72rem; letter-spacing:.1em;
+    text-transform:uppercase; color:var(--hot); text-decoration:none;
+    border-bottom:1px solid rgb(43 163 181 / .4); padding-bottom:2px;
+  }
+  .open:hover{border-color:var(--hot)}
+
+  .frame{
+    position:relative; width:100%; overflow:hidden; border-radius:12px;
+    border:1px solid var(--line); background:#fff; box-shadow:0 20px 50px rgb(0 0 0 / .4);
+  }
+  .frame iframe{border:0; display:block; transform-origin:0 0; background:#fff}
+  body[data-view="mobile"] .frame{
+    width:min(100%, 420px); margin-inline:auto; border-radius:22px;
+  }
+
+  .foot{max-width:1680px; margin-inline:auto; padding:0 22px 60px; color:var(--dim); font-size:.84rem}
+  .foot a{color:var(--hot)}
+
+  @media (max-width:1100px){
+    .cols{grid-template-columns:1fr; gap:38px}
+    .jump{display:none}
+  }
+</style>
+</head>
+<body data-view="desktop">
+
+<div class="bar">
+  <div class="bar-in">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.svg" alt="" width="30" height="30">
+      <span><b>Sea&nbsp;Craft</b><span>Palette comparison</span></span>
+    </a>
+    <nav class="jump" id="jump"></nav>
+    <div class="seg">
+      <button type="button" data-view="desktop" aria-pressed="true">Desktop</button>
+      <button type="button" data-view="mobile" aria-pressed="false">Mobile</button>
+    </div>
+  </div>
+</div>
+
+<div class="intro">
+  <h1>The same page, three palettes.</h1>
+  <p>All three use the <b>light lagoon blue</b> taken from the sea-glass in the terrarium
+     photograph (<b>#0E7A8C</b>). The only thing that changes between the first two is the
+     <b>neutral</b> — cool grey, or the sand and driftwood already present in the product
+     photography.</p>
+  <p>Scroll anywhere on this page and all three move together.</p>
+</div>
+
+<div class="cols" id="cols">
+
+  <div class="col">
+    <div class="head">
+      <span class="tag">Option 1</span>
+      <h2>Blue &amp; grey</h2>
+      <p>The brief, exactly as asked. Cool, clean, gallery-like.</p>
+      <div class="sw">
+        <i style="background:#0E7A8C"></i><i style="background:#5A6E76"></i>
+        <i style="background:#E6ECEE"></i><i style="background:#FFFFFF"></i>
+      </div>
+      <div class="hexes"><span>0E7A8C</span><span>5A6E76</span><span>E6ECEE</span><span>FFFFFF</span></div>
+      <a class="open" href="index.html?theme=client&amp;ui=0" target="_blank" rel="noopener">Open full size &rarr;</a>
+    </div>
+    <div class="frame" data-theme="client" data-w="1440" data-h="6200">
+      <iframe title="Blue and grey palette" src="index.html?theme=client&amp;ui=0" scrolling="no"></iframe>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="head">
+      <span class="tag tag--rec">Our recommendation</span>
+      <h2>Blue, grey &amp; sand</h2>
+      <p>Same blue and greys, warmed with sand. The photographs stop fighting the page.</p>
+      <div class="sw">
+        <i style="background:#0E7A8C"></i><i style="background:#4F6E78"></i>
+        <i style="background:#EADFC8"></i><i style="background:#FBF8F3"></i>
+      </div>
+      <div class="hexes"><span>0E7A8C</span><span>4F6E78</span><span>EADFC8</span><span>FBF8F3</span></div>
+      <a class="open" href="index.html?theme=balanced&amp;ui=0" target="_blank" rel="noopener">Open full size &rarr;</a>
+    </div>
+    <div class="frame" data-theme="balanced" data-w="1440" data-h="6200">
+      <iframe title="Blue, grey and sand palette" src="index.html?theme=balanced&amp;ui=0" scrolling="no"></iframe>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="head">
+      <span class="tag">Option 3</span>
+      <h2>Lagoon &amp; driftwood</h2>
+      <p>Greener, pulled straight from the reference photo. Furthest from the brief.</p>
+      <div class="sw">
+        <i style="background:#117C72"></i><i style="background:#C9B290"></i>
+        <i style="background:#8C6E52"></i><i style="background:#FAF6EE"></i>
+      </div>
+      <div class="hexes"><span>117C72</span><span>C9B290</span><span>8C6E52</span><span>FAF6EE</span></div>
+      <a class="open" href="index.html?theme=lagoon&amp;ui=0" target="_blank" rel="noopener">Open full size &rarr;</a>
+    </div>
+    <div class="frame" data-theme="lagoon" data-w="1440" data-h="6200">
+      <iframe title="Lagoon and driftwood palette" src="index.html?theme=lagoon&amp;ui=0" scrolling="no"></iframe>
+    </div>
+  </div>
+
+</div>
+
+<div class="foot">
+  Design preview only — the cart, prices, stock counts and review quotes are placeholder.
+  Product photographs are the client's own. <a href="index.html">Open the interactive preview</a>,
+  where the palette can be switched in place.
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var frames = Array.prototype.slice.call(document.querySelectorAll('.frame'));
+
+  function fit() {
+    var mobile = document.body.dataset.view === 'mobile';
+    frames.forEach(function (f) {
+      var iw = mobile ? 420 : 1440;
+      var ih = +f.dataset.h || 6200;
+      var scale = f.clientWidth / iw;
+      var ifr = f.querySelector('iframe');
+      ifr.style.width = iw + 'px';
+      ifr.style.height = ih + 'px';
+      ifr.style.transform = 'scale(' + scale + ')';
+      f.style.height = Math.round(ih * scale) + 'px';
+    });
+  }
+
+  // Measure the real document height once each frame has loaded. Same-origin on
+  // a server; blocked when opened straight off disk, hence the try/catch and the
+  // 6200px fallback above.
+  function measure(f) {
+    var ifr = f.querySelector('iframe');
+    try {
+      var d = ifr.contentDocument;
+      if (!d || !d.body) return;
+      var prev = ifr.style.height;
+      ifr.style.height = '100px';                     // collapse, else scrollHeight
+      var h = Math.max(d.body.scrollHeight,           // just echoes the frame height
+                       d.documentElement.scrollHeight);
+      ifr.style.height = prev;
+      if (h > 500) f.dataset.h = h;
+    } catch (e) { /* cross-origin (file://): keep the 6200 fallback */ }
+  }
+
+  frames.forEach(function (f) {
+    f.querySelector('iframe').addEventListener('load', function () {
+      measure(f); fit(); buildJump();
+      // fonts and images can still shift things; settle once more
+      setTimeout(function () { measure(f); fit(); }, 600);
+    });
+  });
+
+  window.addEventListener('resize', fit);
+  fit();
+
+  // Desktop / mobile
+  document.querySelectorAll('.seg button').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.body.dataset.view = btn.dataset.view;
+      document.querySelectorAll('.seg button').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b === btn));
+      });
+      frames.forEach(function (f) {
+        var ifr = f.querySelector('iframe');
+        var u = ifr.src.split('?')[0];
+        ifr.src = u + '?theme=' + f.dataset.theme + '&ui=0';
+      });
+      fit();
+    });
+  });
+
+  // Section jump — read the anchors out of the first frame and translate their
+  // offsets into scroll positions on this page.
+  var SECTIONS = [
+    ['Hero', null], ['Collections', '#cats'], ['Shop', '#shop'],
+    ['Our shop', '#story'], ['How it’s made', '#process'], ['Footer', '#contact']
+  ];
+  var built = false;
+  function buildJump() {
+    if (built) return;
+    var f = frames[0], ifr = f.querySelector('iframe'), doc;
+    try { doc = ifr.contentDocument; } catch (e) { return; }
+    if (!doc) return;
+    var nav = document.getElementById('jump');
+    var ok = 0;
+    SECTIONS.forEach(function (s) {
+      var top = 0;
+      if (s[1]) {
+        var el = doc.querySelector(s[1]);
+        if (!el) return;
+        top = el.getBoundingClientRect().top + (doc.documentElement.scrollTop || doc.body.scrollTop || 0);
+      }
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = s[0];
+      b.addEventListener('click', function () {
+        var scale = f.clientWidth / (document.body.dataset.view === 'mobile' ? 420 : 1440);
+        var y = f.getBoundingClientRect().top + window.scrollY + top * scale - 86;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      });
+      nav.appendChild(b);
+      ok++;
+    });
+    if (ok) built = true;
+  }
+})();
+</script>
+</body>
+</html>

@@ -5,26 +5,38 @@ shells, model ships, resin and island wood.
 
 ## Viewing it
 
-Open `index.html` in a browser. No server, no build step, no network calls.
+**Live:** published to GitHub Pages from this branch by
+`.github/workflows/pages.yml` on every push.
 
-Three palettes ship on the same layout. Use the switcher at the bottom of the
-page, or load directly:
+- `/` — the shop, with a palette switcher at the bottom of the screen
+- `/compare.html` — all three palettes side by side, scrolling together
 
-- `index.html?theme=client` — blue & grey, as briefed
-- `index.html?theme=balanced` — blue, grey & sand (recommended)
-- `index.html?theme=lagoon` — lagoon & driftwood, from the reference photo
+Or open `index.html` straight off disk. No server, no build step, no network
+calls — the one thing that needs a server is `compare.html`, which measures the
+previews inside it and falls back to a fixed height over `file://`.
+
+Three palettes ship on the same layout:
+
+- `?theme=client` — blue & grey, as briefed
+- `?theme=balanced` — blue, grey & sand (recommended)
+- `?theme=lagoon` — lagoon & driftwood, from the reference photo
 
 Add `&ui=0` to hide the switcher for clean screenshots.
+
+Both pages carry `noindex, nofollow`: this is unreleased client work and should
+not turn up in a search for the client's name.
 
 ## What's in here
 
 ```
 index.html              the homepage
+compare.html            all three palettes side by side
 assets/css/style.css    all styling; palettes are at the top
 assets/css/fonts.css    self-hosted Fraunces + Jost
 assets/js/preview.js    sticky header + palette switcher (preview only)
 assets/img/             product photography, turtle watermark, logo
-previews/               rendered screenshots for the client
+previews/               rendered screenshots (not deployed)
+.github/workflows/      GitHub Pages deploy
 WORDPRESS-NOTES.md      how this maps onto a WordPress + WooCommerce build
 ```
 
