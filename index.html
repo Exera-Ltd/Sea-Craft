@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en" data-theme="balanced">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea Craft — Handmade island crafts from Mauritius</title>
+<meta name="description" content="Shells, model ships and lagoon-blue crafts, made by hand in Mauritius. Shipped worldwide from Port Louis.">
+<link rel="icon" href="assets/img/logo.svg">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- ===== icon sprite (inlined so the preview needs no build step) ===== -->
+<svg hidden aria-hidden="true">
+<defs>
+ <g id="i-search" fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></g>
+ <g id="i-user" fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4.5 20c1.3-3.8 4.1-5.6 7.5-5.6s6.2 1.8 7.5 5.6"/></g>
+ <g id="i-heart" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.3 4.6 13a4.7 4.7 0 0 1 6.6-6.6l.8.8.8-.8A4.7 4.7 0 1 1 19.4 13z"/></g>
+ <g id="i-cart" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.2l2.2 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.6L20.6 8H6.2"/><circle cx="10" cy="20.2" r="1.4"/><circle cx="17.5" cy="20.2" r="1.4"/></g>
+ <path id="i-star" d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4 6.2 20.5l1.1-6.5L2.6 9.4l6.5-.9z" fill="currentColor"/>
+ <path id="i-chev" d="M5 8.5 12 15l7-6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="i-arrow" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="M13 6l6 6-6 6"/></g>
+ <g id="i-hand" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 11V4.6a1.6 1.6 0 1 1 3.2 0V10"/><path d="M11.7 10V3.4a1.6 1.6 0 1 1 3.2 0V10"/><path d="M14.9 10.4V5.8a1.6 1.6 0 1 1 3.2 0v7.9a7 7 0 0 1-7 7 7 7 0 0 1-6.6-4.7l-1.3-3.6a1.7 1.7 0 0 1 2.9-1.6l1.4 2"/></g>
+ <g id="i-leaf" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c0-9 5.5-14.5 16-14.5C20 15 14.5 20.5 5.5 20.5z"/><path d="M4.5 20C8 16 12 13 16.5 10.5"/></g>
+ <g id="i-truck" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5h11v10h-11z"/><path d="M13.5 10h4l3 3.2v3.3h-7z"/><circle cx="7" cy="18.5" r="1.8"/><circle cx="17" cy="18.5" r="1.8"/></g>
+ <g id="i-gift" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 9.5h17v4h-17z"/><path d="M5 13.5h14v7H5z"/><path d="M12 9.5v11"/><path d="M12 9.5S10.6 4 8 4a2.4 2.4 0 0 0 0 5.5zM12 9.5S13.4 4 16 4a2.4 2.4 0 0 1 0 5.5z"/></g>
+ <g id="i-plus" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></g>
+ <path id="i-quote" d="M9.6 5.6C6.1 7.2 4 10.4 4 14.1 4 16.9 5.7 19 8.2 19c2.1 0 3.7-1.5 3.7-3.6 0-2-1.4-3.5-3.4-3.5-.4 0-.8 0-1 .2.4-1.6 1.8-3.2 3.6-4.2zm9 0C15.1 7.2 13 10.4 13 14.1c0 2.8 1.7 4.9 4.2 4.9 2.1 0 3.7-1.5 3.7-3.6 0-2-1.4-3.5-3.4-3.5-.4 0-.8 0-1 .2.4-1.6 1.8-3.2 3.6-4.2z" fill="currentColor"/>
+ <g id="i-pin" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.8 7-11a7 7 0 1 0-14 0c0 5.2 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></g>
+ <g id="i-mail" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.6 7 8.4 6 8.4-6"/></g>
+ <g id="i-phone" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5 9.5 8 7.8 10a12 12 0 0 0 6.2 6.2l2-1.7 4.5 2.5-1.3 3A2 2 0 0 1 17 21 16.5 16.5 0 0 1 3 7a2 2 0 0 1 1-1.9z"/></g>
+ <g id="i-ship" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 15.5h17l-2 4.5h-13z"/><path d="M12 15.5V3l6 7.5h-6"/><path d="M12 10.5H6.5L12 6"/></g>
+ <g id="i-ig" fill="none" stroke="currentColor" stroke-linecap="round"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1.1" fill="currentColor" stroke="none"/></g>
+ <path id="i-fb" d="M14 21v-7.6h2.6l.4-3H14V8.5c0-.9.3-1.5 1.6-1.5h1.6V4.3A21 21 0 0 0 15 4.1c-2.4 0-4 1.4-4 4.1v2.2H8.4v3H11V21z" fill="currentColor"/>
+ <path id="i-wa" d="M12 3a9 9 0 0 0-7.7 13.6L3 21.3l4.9-1.3A9 9 0 1 0 12 3zm5.1 12.6c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-3.2-.8a11 11 0 0 1-4.5-4c-.3-.5-1-1.5-1-2.9s.7-2 1-2.3c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.3 0 .5l-.4.5-.3.3c-.1.1-.3.3-.1.6a9 9 0 0 0 1.6 2 7.4 7.4 0 0 0 2.2 1.4c.3.1.4.1.6-.1l.9-1c.2-.2.3-.2.5-.1l2 1c.3.1.4.2.5.3z" fill="currentColor"/>
+ <g id="i-check" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7"/></g>
+ <g id="i-menu" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g>
+ <g id="i-shell" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20 3.8 16A8.5 8.5 0 0 1 20.2 16z"/><path d="M12 20V11M12 20 8 11.8M12 20l4-8.2"/></g>
+</defs>
+</svg>
+
+<!-- =========================================================== TOP BAR -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="topbar-msg"><svg viewBox="0 0 24 24"><use href="#i-truck"/></svg> Free delivery across Mauritius over Rs 2,500<span class="hide-sm"> &nbsp;·&nbsp; Worldwide shipping from Port Louis</span></div>
+    <div class="topbar-right">
+      <a href="#">Track order</a>
+      <a href="#">Wholesale</a>
+      <span class="lang"><b>EN</b> / FR</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ HEADER -->
+<header class="header" id="header">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="Sea Craft home">
+      <img src="assets/img/logo.svg" alt="" width="40" height="40" style="color:var(--brand)">
+      <span class="brand-name"><b>Sea&nbsp;Craft</b><span>Atelier · Mauritius</span></span>
+    </a>
+
+    <nav class="nav">
+      <a href="#shop">Shop <svg viewBox="0 0 24 24"><use href="#i-chev"/></svg></a>
+      <a href="#cats">Collections</a>
+      <a href="#story">Our atelier</a>
+      <a href="#process">How it's made</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="tools">
+      <button class="icon-btn menu-btn" type="button" aria-label="Menu"><svg viewBox="0 0 24 24"><use href="#i-menu"/></svg></button>
+      <button class="ccy" type="button">Rs MUR <svg viewBox="0 0 24 24"><use href="#i-chev"/></svg></button>
+      <button class="icon-btn" type="button" aria-label="Search"><svg viewBox="0 0 24 24"><use href="#i-search"/></svg></button>
+      <button class="icon-btn" type="button" aria-label="Account"><svg viewBox="0 0 24 24"><use href="#i-user"/></svg></button>
+      <button class="icon-btn" type="button" aria-label="Wishlist"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></button>
+      <button class="icon-btn" type="button" aria-label="Cart, 2 items">
+        <svg viewBox="0 0 24 24"><use href="#i-cart"/></svg><span class="badge">2</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============================================================== HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Handmade on the island</span>
+      <h1 class="h-xl">Bring the <em>lagoon</em> home.</h1>
+      <p class="lede">Shells gathered on Mauritian shores, teak shaped by hand, and that
+         particular blue you only get between the reef and the beach. Every piece
+         made in our Mahébourg atelier — no two alike.</p>
+      <div class="hero-cta">
+        <a class="btn btn--primary" href="#shop">Shop the collection <svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost" href="#story">Meet the makers</a>
+      </div>
+      <div class="hero-proof">
+        <div class="avatars">
+          <span style="background:#1C5C79">C</span>
+          <span style="background:#3D93A8">J</span>
+          <span style="background:#9A7B5C">P</span>
+          <span style="background:#5C6F79">+</span>
+        </div>
+        <small>
+          <span class="stars">
+            <svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg><svg viewBox="0 0 24 24"><use href="#i-star"/></svg>
+          </span><br>
+          <b>4.9 / 5</b> from 312 reviews — shipped to 24 countries
+        </small>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="hero-blob"></div>
+      <figure class="hero-frame">
+        <img src="assets/img/hero-terrarium.jpg" alt="Glass terrarium with white sand, starfish, conch shell and an air plant, resting on a driftwood base">
+      </figure>
+      <div class="hero-tag hero-tag--a">
+        <i><svg viewBox="0 0 24 24"><use href="#i-hand"/></svg></i>
+        <span><b>One of a kind</b><small>Hand assembled</small></span>
+      </div>
+      <div class="hero-tag hero-tag--b">
+        <small>Lagon Terrarium</small>
+        <b>Driftwood &amp; blown glass</b>
+        <span class="price">Rs 1,850</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= TRUST -->
+<section class="trust">
+  <div class="wrap">
+    <ul>
+      <li><svg viewBox="0 0 24 24"><use href="#i-hand"/></svg><span><b>Made by hand</b><small>Mahébourg atelier</small></span></li>
+      <li><svg viewBox="0 0 24 24"><use href="#i-leaf"/></svg><span><b>Lagoon-safe sourcing</b><small>Licensed, never reef-taken</small></span></li>
+      <li><svg viewBox="0 0 24 24"><use href="#i-truck"/></svg><span><b>Ships worldwide</b><small>Tracked, 5–9 working days</small></span></li>
+      <li><svg viewBox="0 0 24 24"><use href="#i-gift"/></svg><span><b>Gift wrapped free</b><small>Recycled paper &amp; raffia</small></span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ======================================================== CATEGORIES -->
+<section class="section" id="cats">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Collections</span>
+        <h2 class="h-lg">Four ways to keep the island</h2>
+      </div>
+      <a class="link-more" href="#">All collections <svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="cats">
+      <a class="cat" href="#"><img src="assets/img/p-conch.svg" alt="Conch shell">
+        <div class="cat-body"><span><small>28 pieces</small><b>Shell &amp; Coral</b></span><svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></div></a>
+      <a class="cat" href="#"><img src="assets/img/p-ship.svg" alt="Wooden model ship">
+        <div class="cat-body"><span><small>14 pieces</small><b>Model Ships</b></span><svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></div></a>
+      <a class="cat" href="#"><img src="assets/img/p-coasters.svg" alt="Resin wave coasters">
+        <div class="cat-body"><span><small>22 pieces</small><b>Glass &amp; Resin</b></span><svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></div></a>
+      <a class="cat" href="#"><img src="assets/img/p-dodo.svg" alt="Carved wooden dodo">
+        <div class="cat-body"><span><small>19 pieces</small><b>Wood &amp; Stone</b></span><svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== PRODUCTS -->
+<section class="section" id="shop">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">New this week</span>
+        <h2 class="h-lg">Fresh off the workbench</h2>
+        <p>Small batches, finished and photographed the same week. When a piece is gone, it's gone.</p>
+      </div>
+      <a class="link-more" href="#">Shop all 83 pieces <svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <div class="grid-4">
+      <!-- 1 -->
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/img/hero-terrarium.jpg" alt="Lagon terrarium">
+          <span class="flag flag--dark">One of a kind</span>
+          <button class="wish" aria-label="Save"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></button>
+          <button class="quick"><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg> Add to cart</button>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">Shell &amp; Coral</span>
+          <h3 class="card-title">Lagon Terrarium</h3>
+          <p class="card-meta">Blown glass, white sand, starfish, air plant · 18 cm</p>
+          <div class="card-foot">
+            <span class="price">Rs 1,850</span>
+            <span class="rating"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg> 4.9 (48)</span>
+          </div>
+        </div>
+      </article>
+      <!-- 2 -->
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/img/p-ship.svg" alt="Grand Port model ship">
+          <button class="wish" aria-label="Save"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></button>
+          <button class="quick"><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg> Add to cart</button>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">Model Ships</span>
+          <h3 class="card-title">Grand Port Frigate</h3>
+          <p class="card-meta">Teak hull, cotton canvas sails · 42 cm · 90 h of work</p>
+          <div class="card-foot">
+            <span class="price">Rs 6,400</span>
+            <span class="rating"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg> 5.0 (21)</span>
+          </div>
+        </div>
+      </article>
+      <!-- 3 -->
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/img/p-coasters.svg" alt="Blue lagoon resin coasters">
+          <span class="flag flag--warm">Best seller</span>
+          <button class="wish" aria-label="Save"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></button>
+          <button class="quick"><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg> Add to cart</button>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">Glass &amp; Resin</span>
+          <h3 class="card-title">Blue Lagoon Coasters</h3>
+          <p class="card-meta">Set of four · resin, sand &amp; crushed shell · 10 cm</p>
+          <div class="card-foot">
+            <span class="price"><s>Rs 1,490</s>Rs 1,290</span>
+            <span class="rating"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg> 4.8 (126)</span>
+          </div>
+        </div>
+      </article>
+      <!-- 4 -->
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/img/p-chime.svg" alt="Shell wind chime">
+          <button class="wish" aria-label="Save"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></button>
+          <button class="quick"><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg> Add to cart</button>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">Shell &amp; Coral</span>
+          <h3 class="card-title">Coquillage Wind Chime</h3>
+          <p class="card-meta">Driftwood bar, 11 shells, cotton cord · 55 cm drop</p>
+          <div class="card-foot">
+            <span class="price">Rs 1,150</span>
+            <span class="rating"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg> 4.7 (63)</span>
+          </div>
+        </div>
+      </article>
+      <!-- 5 -->
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/img/p-dodo.svg" alt="Carved dodo">
+          <button class="wish" aria-label="Save"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></button>
+          <button class="quick"><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg> Add to cart</button>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">Wood &amp; Stone</span>
+          <h3 class="card-title">Dodo, Tamarind Wood</h3>
+          <p class="card-meta">Hand carved &amp; oiled · 16 cm · signed underneath</p>
+          <div class="card-foot">
+            <span class="price">Rs 2,250</span>
+            <span class="rating"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg> 4.9 (87)</span>
+          </div>
+        </div>
+      </article>
+      <!-- 6 -->
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/img/p-bottle.svg" alt="Chamarel sand bottle">
+          <span class="flag">Only 4 left</span>
+          <button class="wish" aria-label="Save"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></button>
+          <button class="quick"><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg> Add to cart</button>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">Glass &amp; Resin</span>
+          <h3 class="card-title">Seven Earths Sand Bottle</h3>
+          <p class="card-meta">Layered Chamarel sands, corked glass · 14 cm</p>
+          <div class="card-foot">
+            <span class="price">Rs 750</span>
+            <span class="rating"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg> 4.6 (39)</span>
+          </div>
+        </div>
+      </article>
+      <!-- 7 -->
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/img/p-candle.svg" alt="Basalt and shell candle">
+          <button class="wish" aria-label="Save"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></button>
+          <button class="quick"><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg> Add to cart</button>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">Wood &amp; Stone</span>
+          <h3 class="card-title">Basalt &amp; Shell Candle</h3>
+          <p class="card-meta">Volcanic stone pot, coconut wax, vetiver · 40 h burn</p>
+          <div class="card-foot">
+            <span class="price">Rs 1,420</span>
+            <span class="rating"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg> 4.8 (54)</span>
+          </div>
+        </div>
+      </article>
+      <!-- 8 -->
+      <article class="card">
+        <div class="card-media">
+          <img src="assets/img/p-lamp.svg" alt="Shell table lamp">
+          <span class="flag flag--warm">New</span>
+          <button class="wish" aria-label="Save"><svg viewBox="0 0 24 24"><use href="#i-heart"/></svg></button>
+          <button class="quick"><svg viewBox="0 0 24 24"><use href="#i-plus"/></svg> Add to cart</button>
+        </div>
+        <div class="card-body">
+          <span class="card-cat">Shell &amp; Coral</span>
+          <h3 class="card-title">Coquille Table Lamp</h3>
+          <p class="card-meta">Shell-clustered base, linen shade, EU/UK plug · 38 cm</p>
+          <div class="card-foot">
+            <span class="price">Rs 3,900</span>
+            <span class="rating"><svg viewBox="0 0 24 24"><use href="#i-star"/></svg> 5.0 (12)</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= STORY -->
+<section class="story" id="story">
+  <div class="wrap story-grid">
+    <div>
+      <span class="eyebrow">Our atelier</span>
+      <h2 class="h-lg">Ten minutes from the water, and it shows.</h2>
+      <p>Sea Craft started on a veranda in Mahébourg with a bucket of shells and
+         one very patient grandmother. Fifteen years on, six of us work out of the
+         same street — cutting, sanding, setting and packing by hand.</p>
+      <p>We buy sand and shell only from licensed collectors, never from the reef.
+         The driftwood finds us after a cyclone. Everything else is time.</p>
+      <div class="sig">
+        <div class="avatars">
+          <span style="background:#3D93A8">R</span>
+          <span style="background:#9A7B5C">A</span>
+        </div>
+        <span><b>Reshad &amp; Anjali Beeharry</b><small>Founders</small></span>
+      </div>
+      <p style="margin-top:2rem"><a class="btn btn--light" href="#">Visit the workshop <svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></a></p>
+    </div>
+    <div class="story-media">
+      <img src="assets/img/hero-terrarium.jpg" alt="A finished terrarium on the workbench">
+      <div class="story-stat"><b>15</b><small>years on the island</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================== PROCESS -->
+<section class="section" id="process">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow eyebrow--center">How it's made</span>
+      <h2 class="h-lg">Three slow steps</h2>
+      <p>Nothing here is moulded or machine-finished. That is the whole point, and
+         also why we only ship so many pieces a week.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><b>01</b><h3>Gathered</h3>
+        <p>Shells and sand from licensed island collectors. Teak and tamarind from
+           fallen trees. Driftwood from whatever the sea returns after a storm.</p></div>
+      <div class="step"><b>02</b><h3>Shaped</h3>
+        <p>Cut, carved and sanded by hand at the bench. A frigate hull alone takes
+           about ninety hours before a single sail goes on.</p></div>
+      <div class="step"><b>03</b><h3>Sealed</h3>
+        <p>Marine-grade resin, natural oils and a week of curing, so an island piece
+           survives a Northern-European radiator.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== TESTIMONIAL -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow eyebrow--center">Reviews</span>
+      <h2 class="h-lg">What landed on the doorstep</h2>
+    </div>
+    <div class="quotes">
+      <figure class="quote">
+        <svg viewBox="0 0 24 24"><use href="#i-quote"/></svg>
+        <p>Arrived in Lyon in six days, triple-boxed, not a grain of sand out of place.
+           It is the first thing guests ask about.</p>
+        <footer><div class="avatars"><span style="background:#1C5C79">C</span></div>
+          <span><b>Claire D.</b><small>Lyon, France · Lagon Terrarium</small></span></footer>
+      </figure>
+      <figure class="quote">
+        <svg viewBox="0 0 24 24"><use href="#i-quote"/></svg>
+        <p>I collect model ships and this rigging is properly done — real cord, real
+           tension. Better than pieces I've paid triple for.</p>
+        <footer><div class="avatars"><span style="background:#3D93A8">J</span></div>
+          <span><b>Jason M.</b><small>Cape Town, South Africa · Grand Port Frigate</small></span></footer>
+      </figure>
+      <figure class="quote">
+        <svg viewBox="0 0 24 24"><use href="#i-quote"/></svg>
+        <p>Bought the coasters as wedding favours for 40 guests. Anjali matched the
+           blue to our invitations. Nobody expected that.</p>
+        <footer><div class="avatars"><span style="background:#9A7B5C">P</span></div>
+          <span><b>Priya R.</b><small>Curepipe, Mauritius · Blue Lagoon Coasters</small></span></footer>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================= STRIP -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow eyebrow--center">@seacraft.mu</span>
+      <h2 class="h-md">From the bench this month</h2>
+    </div>
+    <div class="strip">
+      <a href="#"><img src="assets/img/p-starfish.svg" alt=""></a>
+      <a href="#"><img src="assets/img/p-conch.svg" alt=""></a>
+      <a href="#"><img src="assets/img/hero-terrarium.jpg" alt=""></a>
+      <a href="#"><img src="assets/img/p-chime.svg" alt=""></a>
+      <a href="#"><img src="assets/img/p-lamp.svg" alt=""></a>
+      <a href="#"><img src="assets/img/p-bottle.svg" alt=""></a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================== NEWSLETTER -->
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="news">
+      <span class="eyebrow eyebrow--center">Rare pieces first</span>
+      <h2 class="h-md">One email a month. Usually with a shell in it.</h2>
+      <p>New batches go to the list twenty-four hours before the shop. No noise,
+         and Rs 200 off your first order.</p>
+      <form onsubmit="return false">
+        <input type="email" placeholder="your@email.com" aria-label="Email address">
+        <button class="btn btn--primary btn--sm" type="submit">Join</button>
+      </form>
+      <small>We never share your address. Unsubscribe in one click.</small>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============================================================ FOOTER -->
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="#">
+          <img src="assets/img/logo.svg" alt="" width="40" height="40">
+          <span class="brand-name"><b>Sea&nbsp;Craft</b><span>Atelier · Mauritius</span></span>
+        </a>
+        <p>Handmade shell, resin and wood pieces from a small atelier in Mahébourg,
+           shipped around the world since 2011.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><use href="#i-fb"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Shop</h4><ul>
+        <li><a href="#">Shell &amp; Coral</a></li><li><a href="#">Model Ships</a></li>
+        <li><a href="#">Glass &amp; Resin</a></li><li><a href="#">Wood &amp; Stone</a></li>
+        <li><a href="#">Gift cards</a></li></ul></div>
+      <div class="footer-col"><h4>Atelier</h4><ul>
+        <li><a href="#">Our story</a></li><li><a href="#">How it's made</a></li>
+        <li><a href="#">Sourcing policy</a></li><li><a href="#">Wholesale &amp; hotels</a></li>
+        <li><a href="#">Journal</a></li></ul></div>
+      <div class="footer-col"><h4>Help</h4><ul>
+        <li><a href="#">Shipping &amp; duties</a></li><li><a href="#">Returns</a></li>
+        <li><a href="#">Care guide</a></li><li><a href="#">Track your order</a></li>
+        <li><a href="#">FAQ</a></li></ul></div>
+      <div class="footer-col"><h4>Visit &amp; contact</h4><ul>
+        <li class="contact-li"><svg viewBox="0 0 24 24"><use href="#i-pin"/></svg><span>14 Rue des Créoles,<br>Mahébourg, Mauritius</span></li>
+        <li class="contact-li"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg><span>+230 5 712 4490</span></li>
+        <li class="contact-li"><svg viewBox="0 0 24 24"><use href="#i-mail"/></svg><span>bonzour@seacraft.mu</span></li>
+        <li class="contact-li"><svg viewBox="0 0 24 24"><use href="#i-check"/></svg><span>Workshop open Tue–Sat, 9–16</span></li>
+      </ul></div>
+    </div>
+    <div class="footer-bar">
+      <span>© 2026 Sea Craft Ltd · Made in Mauritius 🇲🇺</span>
+      <div class="pays"><span>VISA</span><span>MASTERCARD</span><span>AMEX</span><span>PAYPAL</span><span>JUICE</span></div>
+      <nav><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================================== PREVIEW CONTROL (remove on build) -->
+<div class="pv" data-preview-ui>
+  <span class="pv-tip">Preview only — click to compare palettes</span>
+  <b>Palette</b>
+  <div class="pv-opts">
+    <button class="pv-opt" data-set="client" aria-pressed="false">
+      <span class="pv-dots"><i style="background:#1F4E6B"></i><i style="background:#5E7078"></i><i style="background:#E7ECEE"></i></span>
+      Blue &amp; grey
+    </button>
+    <button class="pv-opt" data-set="balanced" aria-pressed="true">
+      <span class="pv-dots"><i style="background:#1C5C79"></i><i style="background:#5C6F79"></i><i style="background:#EADFC8"></i></span>
+      + Sand
+    </button>
+    <button class="pv-opt" data-set="lagoon" aria-pressed="false">
+      <span class="pv-dots"><i style="background:#2E7D74"></i><i style="background:#C9B290"></i><i style="background:#8C6E52"></i></span>
+      Lagoon
+    </button>
+  </div>
+</div>
+
+<script src="assets/js/preview.js"></script>
+</body>
+</html>

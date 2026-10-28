@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Sea Craft">
+  <path d="M32 50 A 25 25 0 0 1 7.2 46.8 L32 50 Z" fill="none"/>
+  <path d="M32 50 L8.3 41.8 A 25 25 0 0 1 55.7 41.8 Z" fill="currentColor" opacity=".13"/>
+  <g stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 50 L8.3 41.8 A 25 25 0 0 1 55.7 41.8 Z"/>
+    <path d="M32 50 L10.3 37.5"/><path d="M32 50 L15.9 30.8"/><path d="M32 50 L23.4 26.5"/><path d="M32 50 L32.0 25.0"/><path d="M32 50 L40.6 26.5"/><path d="M32 50 L48.1 30.8"/><path d="M32 50 L53.7 37.5"/>
+    <path d="M26.5 50.5 Q32 55 37.5 50.5" stroke-width="2.6"/>
+  </g>
+  <path d="M6 58.5 Q15 53.5 24 58.5 T42 58.5 T58 57" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="round" opacity=".5"/>
+</svg>
